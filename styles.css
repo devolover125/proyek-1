@@ -1,0 +1,176 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: #2e0239;
+    color: #333;
+    margin: 0 ;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container{
+    text-align: center;
+    padding: 20px;
+    width:100%;
+}
+.item-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+.info-banner{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 15px;
+}
+
+.info-item{
+    background-color: #ffffff; 
+    color: black;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+.read-more{
+    color: #ffffff;
+    text-decoration: underline;
+    margin-bottom: 10px;
+    display: block;
+}
+.reward-banner{
+    background-color: #ffcc00;
+    color: #2e0239;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+.input-sectionP{
+    margin-bottom: 20px;
+}
+.input-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.user-input, .server-input{
+padding: 10px;
+border-radius: 5px;
+border: 1px solid #ddd;
+font-size: 14px;
+width: 40%;
+box-sizing: border-box;
+}
+
+.user-input-section{
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+.user-input-section h2{
+    color: #9b59b6;
+    margin-bottom: 15px;
+}
+.user-input-section form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.user-input-section input[type="text"]{
+    padding: 10px;
+    width: 150px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.help-btn{
+    padding: 8px;
+    border:none;
+    border-radius: 50%;
+    background-color: #ffffff;
+    color: #2e0239;
+    font-weight: bold;
+    cursor: pointer;
+}
+.username{
+    font-weight: bold;
+    color: #9b59b6;
+}
+.card{
+    background-color: white;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0, 0.1);
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s;
+}
+.card.popular{
+    border: 2px solid #9b59b6;
+}
+.badge{
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    background-color: #9b59b6;
+    color: white;
+    padding: 3px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+}
+.card-content h2{
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+h1{
+    color: white;
+}
+
+.card-content img{
+    width: 40px;
+    height: auto;
+    margin-bottom: 10px;
+}
+.card-content .price{
+    font-size: 14px;
+    color: #174c3c;
+    font-weight: bold;
+}
+.card-content .discount{
+font-size: 12px;
+color: #16a085;
+margin-top: -5px;
+}
+.card-content .rewards{
+    font-size: 12px;
+    box-shadow: 0 6px 12px rgba(0,0,0, 0.2);
+}
+
+@media (max-width:768px){
+    .item-grid{
+        grid-template-columns: repeat(auto-fit,minmax(120px,1fr));
+        gap: 10px;
+        padding: 10px;
+    }
+    .card-content h2{
+        font-size: 16px;
+    }
+    .card-content img{
+        width: 35px;
+    }
+    .card-content .price{
+        font-size: 12px;
+    }
+    .card-content .discount{
+        font-size: 10px;
+    }
+    .card-content .rewards{
+        font-size: 10px;
+    }
+}
